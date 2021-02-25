@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>{{ title }}</h1>
+    <p>Suivant le <a href="https://www.youtube.com/watch?v=UTusmVpwJXo&list=PLpUhHhXoxrjdQLodxlHFY09_9XzqdPBW8">tuto vidéo</a> de Lior Chamla</p>
+
+    {% if age > 18 %}
+        <p>Tu es majeur</p>
+    {% else %}
+        <p>Tu es mineur</p>
+    {% endif %}
+{% endblock %}
